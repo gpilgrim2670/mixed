@@ -38,6 +38,10 @@
 
 
 pour <- function(drink, area_pcts) {
+  if(sum(area_pcts) != 1) stop('area_pcts must sum to 1')
+  if(length(area_pcts) > 5 | nrow(drink) > 5) stop('only up to 5 drinks are supported')
+  if("density" %in% names(drink) == FALSE) stop("drink must contain a column named density")
+  if("drink" %in% names(drink) == FALSE) stop("drink must contain a column named drink")
   df <- point_finder(drink = drink, area_pcts = area_pcts)
 
   positions_notglass <- data.frame(
@@ -55,8 +59,19 @@ pour <- function(drink, area_pcts) {
     geom_polygon(aes(fill = drink, group = drink)) +
     coord_cartesian(xlim = c(0, 10),
                     ylim = c(0, 10)) +
+    # geom_polygon(data = positions_glass, aes(x = x, y = y, group = id), color = "black", fill = NA, linetype = 2) +
+    geom_segment(aes(x = 3.5, y = 0, xend = 2.5, yend = 10), color = "black") +
+    geom_segment(aes(x = 6.5, y = 0, xend = 7.5, yend = 10), color = "black") +
+    geom_segment(aes(x = 3.5, y = 0, xend = 6.5, yend = 0), color = "black", linetype = 2) +
     geom_polygon(data = positions_notglass, aes(x = x, y = y, group = id), fill = "white") +
     theme_void()
 
   return(p)
 }
+
+
+# drinks <- data.frame(drink = c("soda", "cranberry", "milk", "vodka", "ginger ale", "water"),
+#                      density = c(1, 2, 3, 0.9, 1.01, 2.1),
+#                      stringsAsFactors = FALSE)
+# area_pcts <- c(0.25, 0.25, 0.1, 0.2, 0.15, 0.05)
+# pour(drinks, area_pcts = area_pcts)

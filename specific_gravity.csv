@@ -1,61 +1,115 @@
-Liquid,Specific Gravity,Color,
-151-Proof Rum,0.94,Light Amber,
-Plymouth Gin,0.94,Clear,
-Rum,0.94,Amber,
-Tequila,0.94,Amber,
-Whiskey,0.94,Amber,
-Spiced Rum,0.96,Amber,
-Southern Comfort,0.97,Pale Orange,
-Vodka,0.97,Clear,
-Tuaca,0.98,Amber,
-Green Chartreuse,1.01,Green,
-Jagermeister,1.01,Dark Brown,
-Grand Marnier,1.03,Pale Orange,
-Brandy,1.04,Amber,
-Cinnamon Schnapps,1.04,Red,
-Cherry Liqueur,1.04,Red,
-Coconut Rum,1.04,Clear,
-Cointreau,1.04,Clear,
-Irish Mist,1.04,Light Amber,
-Kummel,1.04,Clear,
-Peach Liqueur,1.04,Dark Amber,
-Peppermint Schnapps,1.04,Clear,
-Sloe Gin,1.04,Dark Red,
-Amarula,1.05,"Creamy, Light Brown",
-Baileys Irish Cream,1.05,"Creamy, Light Brown",
-Midori Melon Liqueur,1.05,Green,
-Rock and Rye,1.05,Amber,
-Campari,1.06,Bright Red,
-Fruit Brandy,1.06,Varies,
-Limoncello,1.06,Yellow,
-Peach Schnapps,1.06,Pale Orange,
-Yellow Chartreuse,1.06,Yellow,
-Benedictine,1.07,Pale Amber,
-Hpnotiq,1.07,Bright Blue,
-Amaretto Di Saronno,1.08,Dark Amber,
-Frangelico,1.08,Pale Amber,
-Orange Curaçao,1.08,Orange,
-Root Beer Schnapps,1.08,Brown,
-Apricot Liqueur,1.09,Bright Amber to Orange,
-Sambuca,1.09,Varies,
-Tia Maria,1.09,Brown,
-Triple Sec,1.09,Clear,
-Blackberry Liqueur,1.1,Dark Purple,
-Blue Curaçao,1.1,Blue,
-Maraschino Liqueur,1.1,Clear,
-Banana Liqueur,1.12,Yellow,
-Galliano,1.12,Golden Yellow,
-Creme de Menthe,1.12,Green,
-Strawberry Liqueur,1.12,Bright Red,
-Chambord,1.13,Purple,
-Parfait Amour,1.13,Violet,
-Coffee Liqueur,1.14,Brown,
-Creme de Cacao,1.14,Brown,
-Kahlua,1.16,Dark Brown,
-Creme de Almond,1.16,Amber,
-Creme de Noyaux,1.16,Bright Red,
-Anisette,1.17,Clear,
-Creme de Banane,1.18,Bright Yellow,
-Creme de Cassis,1.18,Dark Purple,
-Grenadine,1.18,Bright Red,
-Butterscotch Schnapps,1.22,Golden Brown,
+Liquid,Specific Gravity,Color,Hex
+Rum,0.94,Amber,#ffbf00
+Tequila,0.94,Amber,#ffbf01
+Whiskey,0.94,Amber,#ffbf02
+Spiced Rum,0.96,Amber,#ffbf03
+Tuaca,0.98,Amber,#ffbf04
+Brandy,1.04,Amber,#ffbf05
+Rock and Rye,1.05,Amber,#ffbf06
+Creme de Almond,1.16,Amber,#ffbf07
+Blue Curaçao,1.1,Blue,#1E90FF
+Hpnotiq,1.07,Bright Blue,#0000ff
+Campari,1.06,Bright Red,#DC143C
+Strawberry Liqueur,1.12,Bright Red,#DC143C
+Creme de Noyaux,1.16,Bright Red,#DC143C
+Grenadine,1.18,Bright Red,#DC143C
+Creme de Banane,1.18,Bright Yellow,#FFFF00
+Root Beer Schnapps,1.08,Brown,#D2691E
+Tia Maria,1.09,Brown,#D2691E
+Coffee Liqueur,1.14,Brown,#D2691E
+Creme de Cacao,1.14,Brown,#D2691E
+Plymouth Gin,0.94,Clear,#F0FFF0
+Vodka,0.97,Clear,#F0FFF0
+Coconut Rum,1.04,Clear,#F0FFF0
+Cointreau,1.04,Clear,#F0FFF0
+Kummel,1.04,Clear,#F0FFF0
+Peppermint Schnapps,1.04,Clear,#F0FFF0
+Triple Sec,1.09,Clear,#F0FFF0
+Maraschino Liqueur,1.1,Clear,#F0FFF0
+Anisette,1.17,Clear,#F0FFF0
+Sambuca,1.09,Clear,#F0FFF0
+Peach Liqueur,1.04,Dark Amber,#594D27
+Amaretto Di Saronno,1.08,Dark Amber,#594D27
+Jagermeister,1.01,Dark Brown,#A52A2A
+Kahlua,1.16,Dark Brown,#A52A2A
+Blackberry Liqueur,1.1,Dark Purple,#800080
+Creme de Cassis,1.18,Dark Purple,#800080
+Sloe Gin,1.04,Dark Red,#8B0000
+Butterscotch Schnapps,1.22,Golden Brown,#996515
+Galliano,1.12,Golden Yellow,#FFDF00
+Green Chartreuse,1.01,Green,#008000
+Midori Melon Liqueur,1.05,Green,#008000
+Creme de Menthe,1.12,Green,#008000
+151-Proof Rum,0.94,Light Amber,#FFE4B5
+Irish Mist,1.04,Light Amber,#FFE4B5
+Amarula,1.05,Light Brown,#DEB887
+Baileys Irish Cream,1.05,Light Brown,#DEB887
+Apricot Liqueur,1.09,Orange,#FFA500
+Orange Curaçao,1.08,Orange,#FFA500
+Benedictine,1.07,Pale Amber,#FFFACD
+Frangelico,1.08,Pale Amber,#FFFACD
+Southern Comfort,0.97,Pale Orange,#fed8b1
+Grand Marnier,1.03,Pale Orange,#fed8b1
+Peach Schnapps,1.06,Pale Orange,#fed8b1
+Chambord,1.13,Purple,#800080
+Cinnamon Schnapps,1.04,Red,#FF0000
+Cherry Liqueur,1.04,Red,#FF0000
+Fruit Brandy,1.06,Clear,#DCDCDC
+Parfait Amour,1.13,Violet,#EE82EE
+Limoncello,1.06,Yellow,#FFFF00
+Yellow Chartreuse,1.06,Yellow,#FFFF00
+Banana Liqueur,1.12,Yellow,#FFFF00
+Milk,1.03,white,#FFFFFF
+Club Soda,0.99,clear,#F0FFF0
+Water,1,Clear,#F0FFF0
+Ginger Ale,1.03,Light Amber,#FFE4B5
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,

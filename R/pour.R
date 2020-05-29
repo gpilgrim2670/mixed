@@ -52,11 +52,13 @@ pour <- function(drink, area_pcts) {
     stringsAsFactors = FALSE
   )
 
+  df <- df %>%
+    arrange(density)
   p <- df %>%
-    arrange(density) %>%
     mutate(drink = factor(drink, levels = unique(drink))) %>%
     ggplot(aes(x = x, y = y)) +
-    geom_polygon(aes(fill = drink, group = drink)) +
+    # geom_polygon(aes(group = drink, fill = drink)) +
+    geom_polygon(aes(group = drink), fill = df$color) +
     coord_cartesian(xlim = c(0, 10),
                     ylim = c(0, 10)) +
     # geom_polygon(data = positions_glass, aes(x = x, y = y, group = id), color = "black", fill = NA, linetype = 2) +
@@ -69,9 +71,3 @@ pour <- function(drink, area_pcts) {
   return(p)
 }
 
-
-# drinks <- data.frame(drink = c("soda", "cranberry", "milk", "vodka", "ginger ale", "water"),
-#                      density = c(1, 2, 3, 0.9, 1.01, 2.1),
-#                      stringsAsFactors = FALSE)
-# area_pcts <- c(0.25, 0.25, 0.1, 0.2, 0.15, 0.05)
-# pour(drinks, area_pcts = area_pcts)

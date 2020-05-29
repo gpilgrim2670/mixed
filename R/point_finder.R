@@ -270,4 +270,3 @@ point_finder <- function(drink, area_pcts) {
     return(d_5)
   }
 }
-
